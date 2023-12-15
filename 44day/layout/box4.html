@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 4</title>
+    <style>
+        body { margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .box {
+            display: flex;
+            align-items: center; /* 수직중앙정렬 */
+            justify-content: center; /* 수평중앙정렬 */
+            border:1px solid #ccc;
+            background-color: #f0f0f0;
+            flex: 1; /* 확장기능, 해당 요소가 사용 가능한 모든 공간을 차지하도록 만듬 */
+            
+        }
+        .box:nth-child(1){background-color: #aabdff;}
+        .box img {width: 100%; height: 100%;}
+    </style>
+</head>
+<body>
+    <!-- .box{Box 1}*4 -->
+    <div class="box">
+        <a href="#">
+            <img src="./images/anseon-01.png" alt="anseon-01"></a>
+    </div>
+    <div class="box">Box 1</div>
+    <div class="box">Box 1</div>
+    <div class="box">Box 1</div>
+</body>
+</html>

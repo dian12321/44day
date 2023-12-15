@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blind { position: absolute; top: -999px; left: -9999px; text-indent: -99999999999px; font-size: 0; width: 0; height: 0; } 
+
+
+#wrap {
+    width: 100%;
+    min-width: 1225px;
+}
+
+#wrap header {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 -7px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    background-color: #fff;
+    z-index: 9;
+}
+
+#wrap header .headerInner {
+    width: 1225px;
+    margin: 0 auto;
+    display: flex;
+    font-family: 'baloo 2';
+
+    font-size: 25px;
+    justify-content: space-between;
+
+}
+
+
+#wrap header .headerInner h1.logo img {
+    margin-top: 47px;
+    width: 90px;
+}
+
+#wrap header .headerInner h1.logo img:hover {
+    opacity: 0.7;
+}
+
+#wrap header .headerInner nav.menu ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    gap: 50px;
+}
+
+
+
+#wrap header .headerInner nav.menu ul li a{
+    transition: .5s;
+}
+
+#wrap header .headerInner nav.menu ul li a:hover{
+    color: aqua;
+    opacity: 0.7;
+}
+
+/*스와이퍼 슬라이드 */
+
+#wrap section#main_slides {
+    position: absolute;
+    top: 120px;
+    height: 700px; width: 100%;
+    background-color: red;
+}
+
+
+.swiper {
+    width: 100%;height: 100%;
+}
+
+.swiper-slide:nth-child(1){
+    background: #ff9494 url("../images/slide1.jpg")no-repeat center;
+}
+.swiper-slide:nth-child(2){
+    background: #a991ff url("../images/slide2.jpg")no-repeat center;
+}
+.swiper-slide:nth-child(3){
+    background: #fff url("../images/slide3.jpg")no-repeat center;
+}
+
+
+/* 하단 화살표 */
+.btn_top {position: fixed;
+    right: 10px; bottom: 10px;
+    }
+
+
+/* 고정퀵메뉴 */
+#quick {
+    width: 60px; height: 300px;
+    position: fixed;
+    right: 0;
+    top: 170px;
+    background:  linear-gradient(45deg, #4e2bf4, #8367fa);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.3);
+    z-index: 99;
+}
+
+#quick ul {
+    padding-top: 20px;
+}
+
+#quick ul li {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#quick ul li span.box{
+    width: 2px;
+    height: 2px;
+    transition: .3s;
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+#quick ul li:hover span.box{
+    width: 40px;height: 40px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;left: 0;
+}
+
+
+
+/* 아이콘 위치값으로 가져오기 */
+
+#quick ul li a {
+    background: url("../images/quick.svg")no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 25px 125px;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+#quick ul li a.hs{
+    background-position: 0 0;
+}
+#quick ul li a.hl{
+    background-position: 0 -27px;
+}
+#quick ul li a.hh{
+    background-position: 0 -52px;
+}
+#quick ul li a.he{
+    background-position: 0 -75px;
+}
+#quick ul li a.he{
+    background-position: 0 -100px;
+}
+
+/* 호버 */
+
+#quick ul li a {
+    background: url("../images/quickHover.svg")no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 25px 125px;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+#quick ul li a.hs{
+    background-position: 0 0;
+}
+#quick ul li a.hl{
+    background-position: 0 -27px;
+}
+#quick ul li a.hh{
+    background-position: 0 -52px;
+}
+#quick ul li a.he{
+    background-position: 0 -75px;
+}
+#quick ul li a.he{
+    background-position: 0 -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 이전 다음 화살표 */
+div.swiper-button-prev {
+    position: absolute;
+    left: 10%;
+}
+div.swiper-button-next {
+    position: absolute;
+    right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
